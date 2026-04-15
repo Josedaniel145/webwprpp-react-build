@@ -12,7 +12,7 @@ import App from './components/App';
 const { restUrl } = window?.webReactFrontendFilter || {};
 
 console.log( 'Initialize React Frontend', restUrl );
-
+console.log("WATCH TEST 2");
 document.addEventListener( 'DOMContentLoaded', function () {
 	const appNodes = document.querySelectorAll( '.web-react--app' );
 	appNodes.forEach( appNode => {

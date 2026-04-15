@@ -11,12 +11,15 @@ import { useQuery } from "../hooks/useQuery";
 import { useRest } from "../hooks/useRest";
 import { createTheme, ThemeProvider } from "@mui/material";
 
+console.log("OORZC TEST");
 function getNodeComponentData( node ) {
 	return {
 		componentName: node.dataset?.componentName,
 		initProps: JSON.parse( node.dataset?.initProps || '{}' )
 	};
 }
+
+
 
 export default function App( { appNode, restUrl, portals } ) {
 	console.log( 'render App' );
